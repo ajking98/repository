@@ -36,7 +36,7 @@ public class Person5 {
 	  	first[i] = input.charAt(i);
 	  }
 	  for (int j = 0; j < first.length; j++) {
-	  	second[(j+2) % (first.length - 1)] = first[j];
+	  	second[(j+2) % first.length] = first[j];
 	  }
 	  return String.valueOf(second);
 	}
