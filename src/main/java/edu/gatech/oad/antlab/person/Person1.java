@@ -1,4 +1,5 @@
-package edu.gatech.oad.antlab.person;
+package main.java.edu.gatech.oad.antlab.person;
+
 
 /**
  *  A simple class for person 1
@@ -31,7 +32,15 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 	  //Person 1 put your implementation here
-	  return null;
+		char[] arr = input.toCharArray();
+		char[] newArr = new char[input.length()];
+
+		for (int i = 0; i < arr.length - 2; i++) {
+			newArr[i] = arr[i + 2];
+		}
+		newArr[input.length() - 2] = arr[0];
+		newArr[input.length() - 1] = arr[1];
+	  return String.valueOf(newArr);
 	}
 	
 	/**
