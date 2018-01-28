@@ -17,8 +17,7 @@ public class Person4 {
      * @param pname the person's real name
      */
   public Person4(String pname) {
-
-    name = "Anton";
+    name = pname;
   }
     /**
      * This method should return a string
@@ -32,16 +31,8 @@ public class Person4 {
      */
     private String calc(String input) {
       //Person 4 put your implementation here
-      String str = "";
-      for (int i = 0; i < input.length(); i++) {
-        char character = input.charAt(i);
-        int ascii = (int) character;
-        character++;
-        str += character;
-      }
-      return str;
+      return null;
     }
-
     
     /**
      * Return a string rep of this object
