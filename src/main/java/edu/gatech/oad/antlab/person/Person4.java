@@ -1,4 +1,6 @@
-package edu.gatech.oad.antlab.person;
+
+
+package main.java.edu.gatech.oad.antlab.person;
 
 /**
  *  A simple class for person 4
@@ -17,7 +19,8 @@ public class Person4 {
      * @param pname the person's real name
      */
   public Person4(String pname) {
-    name = pname;
+
+    name = "Anton";
   }
     /**
      * This method should return a string
@@ -30,8 +33,14 @@ public class Person4 {
      * @return the modified string
      */
     private String calc(String input) {
-      //Person 4 put your implementation here
-      return null;
+      String str = "";
+      for (int i = 0; i < input.length(); i++) {
+        char character = input.charAt(i);
+        int num = (int) character;
+        character++;
+        str += character;
+      }
+      return str;
     }
     
     /**
