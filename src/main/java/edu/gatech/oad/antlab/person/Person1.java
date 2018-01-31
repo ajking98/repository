@@ -1,4 +1,4 @@
-package edu.gatech;
+package edu.gatech.oad.antlab.person;
 
 
 /**
